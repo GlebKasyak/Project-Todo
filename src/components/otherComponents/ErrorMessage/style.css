@@ -1,0 +1,53 @@
+
+.alert {
+    font-size: 18px;
+}
+
+.alert.signin_error{
+    background: rgba(233, 30, 99, 0.7);
+    border-radius: 35px;
+    margin-top: 65px;
+}
+
+.alert.signup_error {
+    background: rgba(244, 67, 54, 0.7);
+    color: #343a40!important;
+    border-color: #343a40;
+    border-radius: 14px;
+}
+
+.alert.forget_password_error {
+    background: rgba(244, 67, 54, 0.8);
+    color: #212121;
+    border-color: #212121;
+    box-shadow: 0 0 10px 1px #212121;
+}
+
+.alert.signup_error,
+.alert.forget_password_error,
+.alert.error_change_password {
+    margin-top: 30px;
+}
+
+
+
+.alert.strong {
+    text-transform: uppercase;
+}
+
+.alert-dismissible .close {
+    padding: 0;
+    top: -36%;
+    right: -24px;
+    transform: scale(1.4);
+}
+
+.alert.alert-warning,
+.close:hover {
+    color: bisque;
+}
+
+
+
+
+

@@ -1,0 +1,45 @@
+.forget-password  {
+    background: url("https://cdn.pixabay.com/photo/2016/08/13/09/43/data-1590455_1280.jpg");
+    height: 95vh;
+}
+
+.forget-password h1 {
+    padding-top: 70px;
+    color: #fafafa;
+}
+
+.forget-password .fp-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.forget-password .input-group {
+    box-shadow: -1px -1px 7px 1px #e7e7e7;
+}
+
+.forget-password .form-control {
+    border-color: #212121;
+    color: #212121;
+}
+
+.forget-password  .form-control:hover, .forget-password .form-control:hover::placeholder,
+.forget-password  .form-control:active, .forget-password  .form-control:active::placeholder,
+.forget-password .form-control:focus, .forget-password  .form-control:focus::placeholder  {
+    background-color: #212121;
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+.forget-password .btn{
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+.forget-password .btn:hover,
+.forget-password .btn:focus,
+.forget-password .btn:active {
+    background-color: #212121;
+    color: bisque;
+    border-color: bisque;
+}

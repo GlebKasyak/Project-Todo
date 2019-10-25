@@ -1,0 +1,29 @@
+.navbar.navbar-expand-lg {
+    position: fixed;
+    height: 50px;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 0 12px 2px #343a40;
+}
+
+.navbar li a {
+    color: bisque;
+    margin: 0 2px;
+    padding: 0 8px 9px;
+}
+
+.navbar li a:hover,
+.navbar li a:active,
+.navbar li a:focus {
+    border-bottom: 3px solid bisque;
+}
+
+.logo img{
+    border-radius: 30px;
+    max-height: 42px;
+}
+
+.no-auth, .auth {
+    width: 100%;
+}
+
