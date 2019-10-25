@@ -1,0 +1,119 @@
+
+.account-page {
+    height: 95vh;
+    background: url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.account-page h1,
+.account-page .or,
+.user-email {
+    color: #fafafa;
+}
+
+.account-page .col-8 {
+    height: 30vh;
+    padding-top: 100px;
+}
+
+.account-page .or {
+    height: max-content;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0 35px;
+    text-transform: uppercase;
+}
+
+.user-email {
+    padding-top: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*email animation*/
+.user-email span{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 7s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+
+
+.account-page .form-control {
+    border-color: #fafafa;
+    color: #212121;
+}
+
+.account-page .form-control:hover,
+.account-page .form-control:active,
+.account-page .form-control:focus,
+.account-page .form-control:active::placeholder,
+.account-page .form-control:hover::placeholder,
+.account-page .form-control:focus::placeholder,
+.account-page .btn:hover,
+.account-page .btn:active,
+.account-page .btn:focus {
+    background-color: transparent;
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+.account-page .forms {
+    padding-top: 50px;
+}
+
+.account-page .input-group-text {
+    background-color: transparent;
+    color: #fafafa;
+}
+
+.account-page .btn{
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+/*change button*/
+.account-page .btn-submit .btn{
+    margin-top: 20px;
+    width: 50%;
+    box-shadow: 0 0 20px -3px #fafafa;
+    border: none;
+    font-weight: 100;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.account-page .btn-submit .btn:hover {
+    color: #212121;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: #fafafa;
+    width: 65%;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.9);
+    transition: all 0.3s ease 0s;
+}
+
+

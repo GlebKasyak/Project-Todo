@@ -1,0 +1,67 @@
+
+.user-list-page {
+    position: relative;
+    background: url("https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331258_1280.png");
+    height: 95vh;
+}
+
+.user-list-page h1 {
+    color: #343a40;
+    padding-top: 60px;
+}
+
+.loading-animation {
+    position: absolute;
+    top: 17%;
+    z-index: 3;
+    height: 50px;
+}
+
+.user-list {
+    top: 30%;
+    left: 50px;
+    position: absolute;
+}
+
+.user-list li {
+    position: relative;
+    list-style-type: none;
+    padding: 5px 0;
+    height: fit-content;
+}
+
+.user-list li:before {
+    font-family: FontAwesome;
+    position: absolute;
+    display: inline-block;
+    content: "\f007";
+    left: -20px;
+    top: 7px;
+
+}
+
+.user-list p {
+    display: inline-block;
+}
+
+.user-list p strong {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.user-list span {
+    color: #3F729B;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-list p strong,
+.user-list span {
+    padding-right: 10px;
+}
+
+.user-list-page .overlay {
+    height: 100%;
+    background: rgba(158, 158, 158, 0.2);
+}
+

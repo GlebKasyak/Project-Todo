@@ -1,0 +1,201 @@
+.sign-in {
+    position: relative;
+    padding: 50px 0 30px;
+}
+
+.sign-in-form {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+}
+
+.sign-in .row {
+    margin: 0;
+}
+
+.sign-in .btn-submit {
+    text-align: right;
+}
+
+.sign-in .btn{
+    color:#ee3769;
+    font-size:20px;
+    background:transparent;
+    cursor:pointer;
+    border:2px solid #ee3769;
+    width:150px;
+    height:40px;
+    text-align:center;
+    -webkit-transform:translate(0,40%);
+    transform:translate(0,40%);
+    -webkit-transition:all .6s ease-in-out;
+    transition:all .6s ease-in-out;
+    overflow:hidden;
+    line-height: 1;
+}
+
+
+.sign-in .btn::before{
+    content:'';
+    position:absolute;
+    top:-130px;
+    margin:auto;
+    display:block;
+    border-radius:50%;
+    width:300px;
+    height:300px;
+    left:-75px;
+    -webkit-transition:box-shadow .6s ease-in-out;
+    transition:box-shadow .6s ease-in-out;
+    z-index:-1;
+}
+
+.sign-in h1,
+.link-to-signUp,
+.sign-in .form-control {
+    color: bisque;
+}
+
+.sign-in .btn:hover{
+    color:#fff;
+}
+
+.sign-in .btn:hover::before{
+    box-shadow:inset 0 0 0 160px #ee3769;
+}
+
+
+.sign-in .form-control,
+.sign-in .input-group-text {
+    background: transparent;
+    border-color: #ee3769;
+}
+
+.sign-in .input-group-text {
+    background-color: #343a40;
+}
+
+.sign-in .form-control::placeholder,
+.sign-in .link-to-forget-password a,
+.sign-in .link-to-forget-password a:before,
+.sign-in .link-to-forget-password a:after {
+    color: #ee3769;
+}
+
+.sign-in .form-control:focus, .sign-in .form-control:focus::placeholder,
+.sign-in .form-control:hover, .sign-in .form-control:hover::placeholder,
+.sign-in .form-control:active, .sign-in .form-control:active::placeholder {
+    background-color: #343a40;
+    color: bisque;
+    border-color: rgba(238, 55, 105, .25);
+    box-shadow: 0 0 0 0.2rem rgba(238, 55, 105, .25);
+    outline: 0!important;
+}
+
+.sign-in .registration {
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
+}
+
+.sign-in .registration .col-4 {
+    padding-left: 10px;
+}
+
+.sign-in.page {
+    background-size: cover;
+    background-position-y: 85%;
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/23/16/22/welcome-3344772_1280.jpg");
+}
+
+
+.sign-in .link-to-forget-password,
+.sign-in .link-to-signUp {
+    text-align: center;
+}
+
+.sign-in .link-to-forget-password a:before, .link-to-forget-password a:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 2px solid;
+}
+
+.sign-in .link-to-forget-password a:after {
+    margin: 0 -55% 0 .5em;
+}
+
+
+
+
+
+.sign-in .link-to-signUp {
+    font-size: 20px;
+}
+
+.sign-in .link-to-signUp a {
+    border-radius: 4px;
+    background-color: #ee3769;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sign-in .link-to-signUp a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.sign-in .link-to-signUp a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.sign-in .link-to-signUp a:hover span {
+    padding-right: 25px;
+}
+
+.sign-in .link-to-signUp a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}

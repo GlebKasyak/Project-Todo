@@ -1,0 +1,9 @@
+.main {
+    height: 95vh;
+    background: url("https://cdn.pixabay.com/photo/2016/12/02/02/04/idea-1876653_1280.jpg");
+}
+
+.main  h1 {
+    padding-top: 100px;
+    color: #212121;
+}

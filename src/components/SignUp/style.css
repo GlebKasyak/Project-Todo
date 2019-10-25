@@ -1,0 +1,125 @@
+.sign-up {
+    background-image: url("https://cdn.pixabay.com/photo/2014/12/27/15/34/notebook-581128_1280.jpg");
+    height: 95vh;
+}
+
+.sign-up h1 {
+    padding-top: 90px;
+    color: #343a40;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 170px;
+}
+
+.sign-up label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sign-up label,
+.sign-up .input-group-text {
+    color: #343a40;
+}
+
+.sign-up .input-group-text {
+    background-color: transparent;
+}
+
+.sign-up .form-control {
+    background: transparent;
+}
+
+.sign-up .input-group-text,
+.sign-up .form-control {
+    border-color: #343a40;
+}
+
+.sign-up h1,
+.sign-up .btn,
+.sign-up .form-control,
+.sign-up .form-control::placeholder {
+    color: #343a40;
+}
+
+.sign-up .form-control:hover, .sign-up .form-control:hover::placeholder,
+.sign-up .form-control:active, .sign-up .form-control:active::placeholder,
+.sign-up .form-control:focus, .sign-up .form-control:focus::placeholder  {
+    background-color: #343a40;
+    color: bisque;
+}
+
+.sign-up .btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+.sign-up .btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border-radius: 999px;
+    border: 2px solid #343a40;
+}
+
+.sign-up .btn:hover {
+    box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);
+    animation: burn 1000ms ease-out forwards;
+}
+
+.sign-up .btn:hover::before {
+    left: 40px;
+}
+
+.sign-up .btn:hover::after {
+    right: 40px;
+}
+
+.sign-up .btn:hover::before,
+.sign-up .btn:hover::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background: rgba(255, 230, 110, 1);
+    border-radius: 100%;
+    animation: flare 1000ms ease-out forwards;
+}
+
+@keyframes flare {
+    100% {
+        transform: translateY(-20px) scale(1.5);
+        filter: blur(10px);
+        opacity: 0;
+    }
+}
+
+@keyframes burn {
+    0% {
+        color: #ff8f00;
+        background: rgba(255, 230, 110, 1);
+        box-shadow:
+                0 0 5px 0 rgba(200, 0, 10, 1),
+                0 0 5px 0 rgba(230, 30, 10, 0.8),
+                0 0 5px 0 rgba(230, 230, 10, 0.6);
+    }
+
+    100% {
+        color: rgba(0, 0, 0, 1);
+        background: #ff8f00;
+        box-shadow:
+                0 -35px 40px 30px rgba(255, 130, 10, 0),
+                0 -30px 30px 10px rgba(230, 30, 10, 0),
+                0 -20px 10px 0 rgba(255, 255, 10, 0);
+    }
+}

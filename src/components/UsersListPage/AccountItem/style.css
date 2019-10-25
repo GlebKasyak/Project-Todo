@@ -1,0 +1,23 @@
+
+.userName {
+    width: 120px;
+    background: bisque;
+    font-size: 20px;
+    color: #343a40;
+    border-radius: 20px;
+    position: absolute;
+    text-align: right;
+    right: 130px;
+}
+
+.userName:before {
+    font-family: FontAwesome;
+    content: "\f2bb";
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+}
+
+.top-profile {
+    position: relative;
+}
